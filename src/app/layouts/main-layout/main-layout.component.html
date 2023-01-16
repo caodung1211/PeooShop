@@ -1,0 +1,11 @@
+<mat-drawer-container class="example-container h-[100vh] bg-[#fbf6f0] border-0" >
+  <mat-drawer #drawer class="example-sidenav" mode="side" [opened]="isOpened">
+    <app-nav-menu></app-nav-menu>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+  </div>
+</mat-drawer-container>

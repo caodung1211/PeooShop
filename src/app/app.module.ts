@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialExampleModule } from 'src/material.module';
+import { ProductStatusComponent } from './pages/General-Management/product-status/product-status.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductStatusComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialExampleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
